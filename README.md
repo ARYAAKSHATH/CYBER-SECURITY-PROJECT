@@ -11,7 +11,7 @@ A secure **Flask‑based** web application for managing and encrypting user cred
 
 ```bash
 git clone "https://github.com/ARYAAKSHATH/CYBER-SECURITY-PROJECT.git"
-cd <repository_directory>
+cd CYBER-SECURITY-PROJECT
 ````
 
 ### 2. Create and Activate a Virtual Environment
