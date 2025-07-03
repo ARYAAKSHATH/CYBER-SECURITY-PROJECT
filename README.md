@@ -1,80 +1,59 @@
-Password Manager
-A secure Flask-based web application for managing and encrypting user credentials with a password generator.
-Setup Instructions
-Clone the Repository
 
-Clone the repository to your local machine:git clone <repository_url>
+# Password Manager
 
+A secure **Flask‑based** web application for managing and encrypting user credentials, complete with a built‑in password generator.
 
-Navigate to the repository directory:cd <repository_directory>
+---
 
+## 🛠️ Setup Instructions
 
+### 1. Clone the Repository
 
-Create and Activate Virtual Environment
+```bash
+git clone <repository_url>
+cd <repository_directory>
+````
 
-Create a virtual environment:python -m venv venv
+### 2. Create and Activate a Virtual Environment
 
+#### Create the environment:
 
-Activate the virtual environment:
-On Windows:venv\Scripts\activate
+```bash
+python -m venv venv
+```
 
+#### Activate the environment:
 
-On macOS/Linux:source venv/bin/activate
+* **On Windows**
 
+  ```bash
+  venv\Scripts\activate
+  ```
 
+* **On macOS/Linux**
 
+  ```bash
+  source venv/bin/activate
+  ```
 
-Install the required dependencies:pip install -r requirements.txt
+### 3. Install Dependencies
 
+```bash
+pip install -r requirements.txt
+```
 
+---
 
-File Descriptions and Execution
-app.py
+## 📁 File Descriptions and Execution
 
-Description: The main Flask application file that defines routes, user authentication, and credential management.
-Run Command:python app.py
-
-
-
-check_database.py
-
-Description: A utility script to inspect the SQLite database, listing tables and their contents.
-Run Command:python check_database.py
-
-
-
-config.py
-
-Description: Contains configuration settings for the Flask app, including database and security settings.
-Run Command: Not run directly; imported by app.py.
-
-password_manager.db
-
-Description: SQLite database file storing user and credential data (created automatically by app.py).
-Run Command: Not run directly; managed by the application.
-
-encryption.py
-
-Description: Implements password encryption and decryption using Fernet symmetric encryption.
-Run Command: Not run directly; imported by app.py.
-
-models.py
-
-Description: Defines database models for users and credentials using Flask-SQLAlchemy.
-Run Command: Not run directly; imported by app.py.
-
-forms.py
-
-Description: Defines WTForms for user registration, login, and credential management.
-Run Command: Not run directly; imported by app.py.
-
-requirements.txt
-
-Description: Lists Python dependencies required for the project.
-Run Command: Not run directly; used with pip install -r requirements.txt.
-
-passwords_utils.py
-
-Description: Provides utilities for generating secure passwords and checking their strength.
-Run Command: Not run directly; imported by app.py.
-
+| File                      | Description                                                                             | Run Command                                 |
+| ------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **`app.py`**              | Main Flask application defining routes, user authentication, and credential management. | `python app.py`                             |
+| **`check_database.py`**   | Utility script to inspect the SQLite database (lists tables & contents).                | `python check_database.py`                  |
+| **`config.py`**           | Configuration settings for the Flask app (database paths, security keys, etc.).         | *Imported by* `app.py`                      |
+| **`password_manager.db`** | SQLite database storing users and credentials (auto‑created by the app).                | *Managed by the application*                |
+| **`encryption.py`**       | Implements encryption/decryption using **Fernet** symmetric encryption.                 | *Imported by* `app.py`                      |
+| **`models.py`**           | Database models for users and credentials using **Flask‑SQLAlchemy**.                   | *Imported by* `app.py`                      |
+| **`forms.py`**            | **WTForms** definitions for registration, login, and credential forms.                  | *Imported by* `app.py`                      |
+| **`passwords_utils.py`**  | Utilities for generating secure passwords and checking strength.                        | *Imported by* `app.py`                      |
+| **`requirements.txt`**    | List of Python dependencies required for the project.                                   | Used with `pip install -r requirements.txt` |
