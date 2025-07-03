@@ -3,6 +3,8 @@
 
 A secure **Flask‑based** web application for managing and encrypting user credentials, complete with a built‑in password generator.
 
+
+### VIDEO LINK: "https://drive.google.com/file/d/1WvQffPOcnZpLQS1PHnB20l8zjMMcn2Ju/view?usp=sharing" ###
 ---
 
 ## 🛠️ Setup Instructions
